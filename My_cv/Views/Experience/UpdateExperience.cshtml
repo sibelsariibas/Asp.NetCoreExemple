@@ -1,0 +1,63 @@
+﻿@using EntityLayer.Concreate
+@model Experience  
+@{
+    ViewData["Title"] = "UpdateExperience";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<style>
+    textarea.form-control {
+        height: 250px; /* İstediğiniz yükseklik değeri */
+        width:750px;
+    }
+</style>
+<form class="form-group" method="post">
+    <div class="col-xl-8 order-xl-1">
+        <div class="card">
+            <div class="card-header">
+                <div class="row align-items-center">
+                    <div class="col-8">
+                        <h3 class="mb-0">Deneyim Bilgileri</h3>
+                    </div>
+                    <div class="col-4 text-right">
+                        <button type="submit" class="btn btn-sm btn-primary">Kaydet</button>
+                    </div>
+                </div>
+            </div>
+
+            <input name="ExperienceID" value="@Model.ExperienceID" type="hidden" />
+            <div class="card-body">
+                <h6 class="heading-small text-muted mb-2">Deneyim Detay</h6>
+                <div class="pl-lg-2">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="form-control-label" for="Title">Firma Bilgisi</label>
+                                <input type="text" name="Name" maxlength="200" class="form-control" placeholder="Firma" required value="@Model.Name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="form-control-label" for="Title">Tarih</label>
+                                <input type="date" name="Date" class="form-control" placeholder="Tarih" required value="@Model.Date.ToString()">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="form-control-label" for="Title">Görev Tanımı</label>
+                                <textarea name="Description" maxlength="700" class="form-control" placeholder="Görev Tanımı" required >@Model.Description</textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
