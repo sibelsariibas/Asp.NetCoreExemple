@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u2CVMbysjAep6XGc3Hcr3+BEvj0Y3zmfjA0/B8okvOg+kfAfE+LtDVIgtoRScrjnkp2XaiFjHrmaElPNkuzfVA==",
+  "dgSpecHash": "r/X9ebDSrBczt5owJKfWwbNciHb2ZqGqWHzddhs0cB5URFVD38VHvIrCmkSzecOl85mpHfFQzbeOzfkLcey9Cg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sibel.saribas\\source\\repos\\My_cv\\My_cv.csproj",
+  "projectFilePath": "C:\\Users\\sibel.saribas\\source\\Asp.NetCoreEx\\Asp.NetCoreEx\\My_cv\\My_cv.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sibel.saribas\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
     "C:\\Users\\sibel.saribas\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",

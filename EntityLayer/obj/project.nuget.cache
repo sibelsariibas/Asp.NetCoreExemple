@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NJbdRXJ1Y3vxUH7FuCA1qPZICznMTVtkdRbPbwoUxKTAw06FpttiLbW/0YoJ+tCJ9JYTSbrpOCQPJKdKtVbkEA==",
+  "dgSpecHash": "XGnGGMsawvRTyXhPeBLUPrb8r+VFnjswA3ZUNwo0ebekoW9ykJYv7WsLkeS68UqzS7VP45JGHstyc6mqF3xHgQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sibel.saribas\\source\\repos\\EntityLayer\\EntityLayer.csproj",
+  "projectFilePath": "C:\\Users\\sibel.saribas\\source\\Asp.NetCoreEx\\Asp.NetCoreEx\\EntityLayer\\EntityLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sibel.saribas\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\sibel.saribas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

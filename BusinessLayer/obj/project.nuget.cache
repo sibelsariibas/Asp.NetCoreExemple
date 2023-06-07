@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RJjS5EXaN/NOvjKX/p5G0544YH0sxbH3m32sOBPSKJGNwbk5gnA6TY2n1uyoV9zZy+bBZE650LfH2CgJ5MsIuA==",
+  "dgSpecHash": "xOERT5SAyaIhxo8CewcuXfN2N2FSYfNoiJuN9ejmFyuomldBBiUJGKmtNjhiaMNrFDjCNSVFuiCN0+IEugER7Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sibel.saribas\\source\\repos\\BusinessLayer\\BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\sibel.saribas\\source\\Asp.NetCoreEx\\Asp.NetCoreEx\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sibel.saribas\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
     "C:\\Users\\sibel.saribas\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FYU5IbHkuNYKCT33RZXc/dt+KjEvRJy5y5WFo+Sq1iNXI/dSM1dpVqAJnU5lRoiVV7itf+e3FeIggWFjUO91qQ==",
+  "dgSpecHash": "UltvB44+S4ZaUqOlVKl46D9sFD+wqw2uuuP+CVOweKmRSahIV1QMqTeDhwo85hc5fAeg5XRENhPvVUkg0588mA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sibel.saribas\\source\\repos\\DataAccessLayer\\DataAccessLayer.csproj",
+  "projectFilePath": "C:\\Users\\sibel.saribas\\source\\Asp.NetCoreEx\\Asp.NetCoreEx\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sibel.saribas\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\sibel.saribas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

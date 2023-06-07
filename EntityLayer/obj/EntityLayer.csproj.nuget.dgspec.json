@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sibel.saribas\\source\\repos\\EntityLayer\\EntityLayer.csproj": {}
+    "C:\\Users\\sibel.saribas\\source\\Asp.NetCoreEx\\Asp.NetCoreEx\\EntityLayer\\EntityLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sibel.saribas\\source\\repos\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\sibel.saribas\\source\\Asp.NetCoreEx\\Asp.NetCoreEx\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sibel.saribas\\source\\repos\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\sibel.saribas\\source\\Asp.NetCoreEx\\Asp.NetCoreEx\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\sibel.saribas\\source\\repos\\EntityLayer\\EntityLayer.csproj",
+        "projectPath": "C:\\Users\\sibel.saribas\\source\\Asp.NetCoreEx\\Asp.NetCoreEx\\EntityLayer\\EntityLayer.csproj",
         "packagesPath": "C:\\Users\\sibel.saribas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sibel.saribas\\source\\repos\\EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\sibel.saribas\\source\\Asp.NetCoreEx\\Asp.NetCoreEx\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
