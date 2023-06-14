@@ -1,0 +1,88 @@
+﻿@using EntityLayer.Concreate
+@model About
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<style>
+    textarea.form-control {
+        height: 250px;
+        width: 750px;
+    }
+</style>
+<form class="form-group" method="post">
+    <div class="col-xl-8 order-xl-1">
+        <div class="card">
+            <div class="card-header">
+                <div class="row align-items-center">
+                    <div class="col-8">
+                        <h3 class="mb-0">Hakkımda</h3>
+                    </div>
+                    <div class="col-4 text-right">
+                        <button type="submit" class="btn btn-sm btn-primary">Güncelle</button>
+                    </div>
+                </div>
+            </div>
+
+            <input name="AboutID" value="@Model.AboutID" type="hidden" />
+            <div class="card-body">
+                <h6 class="heading-small text-muted mb-2">Hakkımda</h6>
+                <div class="pl-lg-2">
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="form-control-label" for="Title">Başlık</label>
+                                <input type="text" name="Title" maxlength="700" class="form-control" placeholder="Başlık" required value="@Model.Title">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="form-control-label" for="Description">Açıklama</label>
+                                <textarea name="Description" maxlength="2000" class="form-control" placeholder="Açıklama" required>@Model.Description</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="form-control-label" for="Age">Yaş</label>
+                                <input type="number" name="Age" maxlength="7" class="form-control" placeholder="Yaş" required value="@Model.Age">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="form-control-label" for="Mail">E-Mail Adresi</label>
+                                <input type="email" name="Mail" maxlength="20" class="form-control" placeholder="E-Mail" required value="@Model.Mail">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="form-control-label" for="Phone">İletişim Numarası</label>
+                                <input type="tel" name="Phone" maxlength="20" class="form-control" placeholder="0(5)" required value="@Model.Phone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="form-control-label" for="Address">Adres</label>
+                                <textarea name="Address" maxlength="2000" class="form-control" placeholder="Adres" required>@Model.Address</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

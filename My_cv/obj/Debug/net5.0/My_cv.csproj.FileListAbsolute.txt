@@ -370,3 +370,5 @@ C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0
 C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0\ref\My_cv.dll
 C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0\My_cv.pdb
 C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0\My_cv.genruntimeconfig.cache
+C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0\Razor\Views\Feature\Index.cshtml.g.cs
+C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0\Razor\Views\About\Index.cshtml.g.cs
