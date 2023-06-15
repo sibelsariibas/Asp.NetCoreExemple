@@ -19,7 +19,6 @@ C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\EntityLayer\bin\Debug\
 C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\EntityLayer\bin\Debug\net5.0\EntityLayer.dll
 C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\EntityLayer\bin\Debug\net5.0\ref\EntityLayer.dll
 C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\EntityLayer\bin\Debug\net5.0\EntityLayer.pdb
-C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.AssemblyReference.cache
 C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\EntityLayer\obj\Debug\net5.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfoInputs.cache
 C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfo.cs
@@ -28,3 +27,4 @@ C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\EntityLayer\obj\Debug\
 C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll
 C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
 C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\EntityLayer\obj\Debug\net5.0\EntityLayer.genruntimeconfig.cache
+C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.AssemblyReference.cache

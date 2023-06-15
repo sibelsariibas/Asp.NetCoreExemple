@@ -16,9 +16,9 @@ namespace My_cv.Controllers
 
         public IActionResult Index()
         {
-            ViewBag.Value1 = "Yetenek";
-            ViewBag.Value2 = "Yetenek";
-            ViewBag.Value3 = "Yetenek Listesi";
+            ViewBag.Value1 = "Teknik Bilgi";
+            ViewBag.Value2 = "Teknik Bilgi";
+            ViewBag.Value3 = "Teknik Bilgi Listesi";
             var values = skillManager.TGetList();
             return View(values);
         }
@@ -26,9 +26,9 @@ namespace My_cv.Controllers
         [HttpGet]
         public IActionResult AddSkill()
         {
-            ViewBag.Value1 = "Yetenek";
-            ViewBag.Value2 = "Yetenek";
-            ViewBag.Value3 = "Yetenek Ekle";
+            ViewBag.Value1 = "Teknik Bilgi";
+            ViewBag.Value2 = "Teknik Bilgi";
+            ViewBag.Value3 = "Teknik Bilgi Ekle";
             return View();
         }
 
@@ -50,9 +50,9 @@ namespace My_cv.Controllers
         public IActionResult UpdateSkill(int Id)
         {
             Skill skill = skillManager.TGetByID(Id);
-            ViewBag.Value1 = "Yetenek";
-            ViewBag.Value2 = "Yetenek";
-            ViewBag.Value3 = "Yetenek Bilgileri";
+            ViewBag.Value1 = "Teknik Bilgi";
+            ViewBag.Value2 = "Teknik Bilgi";
+            ViewBag.Value3 = "Teknik Bilgi Kaydı";
             return View(skill);
         }
 

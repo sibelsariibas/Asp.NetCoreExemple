@@ -1,0 +1,48 @@
+﻿@using EntityLayer.Concreate
+@model List<Service>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<style>
+    .overflow-description p {
+        margin: 0 0 10px;
+    }
+</style>
+<div class="card-header border-0">
+    <h3 class="mb-0">Mesleki Kazanım</h3>
+</div>
+<div class="table-responsive">
+    <table class="table align-items-center table-flush">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col" class="sort" data-sort="budget">#</th>
+                <th scope="col" class="sort" data-sort="budget">Başlık</th>
+                <th scope="col">Sil</th>
+                <th scope="col" class="sort" data-sort="completion">Düzenle</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody class="list">
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="budget">
+                        @item.ServiceID
+                    </td>
+                    <td class="budget">
+                        @item.Title
+                    </td>
+                    <td> <a href="/Service/DeleteService/@item.ServiceID" class="btn-sm btn-danger">Sil</a></td>
+                    <td> <a href="/Service/UpdateService/@item.ServiceID" class="btn-sm btn-info">Güncelle</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+<br />
+<a href="/Service/AddService" class="btn-sm btn-primary">Mesleki Kazanım Ekle</a>

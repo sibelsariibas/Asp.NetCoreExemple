@@ -4,16 +4,17 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-
 <style>
     textarea.form-control {
         height: 250px;
         width: 750px;
     }
 </style>
-<form class="form-group" method="post">
-    <div class="col-xl-8 order-xl-1">
-        <div class="card">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="col-xl-8 order-xl-1">
+    <div class="card">
+        <form action="Index" class="form-group" method="post">
             <div class="card-header">
                 <div class="row align-items-center">
                     <div class="col-8">
@@ -24,12 +25,10 @@
                     </div>
                 </div>
             </div>
-
             <input name="AboutID" value="@Model.AboutID" type="hidden" />
             <div class="card-body">
                 <h6 class="heading-small text-muted mb-2">Hakkımda</h6>
                 <div class="pl-lg-2">
-
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
@@ -54,7 +53,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
@@ -63,8 +61,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
@@ -81,8 +77,28 @@
                             </div>
                         </div>
                     </div>
+        </form>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label class="form-control-label" for="ImageUrl">Fotoğraf</label>
+                    <br />
+                    <img style="width:250px ; height:250px ; border-radius:10px" src="~/Template/images/userımage/@Model.ImageUrl" />
+                    <br />
+                    <form action="UploadFile" method="post" enctype="multipart/form-data">
+                        <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100">
+                        </div>
+                        <br />
+                        <input type="file" name="ImageUrl" maxlength="20" class="form-control" accept="image/png, image/gif, image/jpeg" required">
+                        <br>
+                        <input name="AboutID" value="@Model.AboutID" type="hidden" />
+                        <input type="submit" style="background-color:pink ; border-radius:15px" value="Fotoğraf Yükle" name="submit">
+                    </form>
                 </div>
             </div>
         </div>
+
     </div>
-</form>
+</div>
+    </div>
+</div>
