@@ -36,8 +36,11 @@ namespace My_cv.Controllers
         [HttpPost]
         public IActionResult Index(About about)
         {
+            ViewBag.Value1 = "Hakkımda";
+            ViewBag.Value2 = "Hakkımda";
+            ViewBag.Value3 = "Bilgiler";
             aboutManager.TUpdate(about);
-            return View();
+            return View(about);
         }
 
         [HttpPost]

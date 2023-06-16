@@ -383,3 +383,10 @@ C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0
 C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
 C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0\Razor\Views\Shared\Components\EducationInformationList\Default.cshtml.g.cs
+C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0\Razor\Views\EducationInformation\Index.cshtml.g.cs
+C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0\Razor\Views\EducationInformation\UpdateEducationInformation.cshtml.g.cs
+C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0\Razor\Views\EducationInformation\AddEducationInformation.cshtml.g.cs
+C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0\Razor\Views\Services\UpdateService.cshtml.g.cs
+C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0\Razor\Views\Services\AddService.cshtml.g.cs
+C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0\Razor\Views\Contact\Index.cshtml.g.cs

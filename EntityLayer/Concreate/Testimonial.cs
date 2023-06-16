@@ -13,5 +13,6 @@ namespace EntityLayer.Concreate
         public int TestimonialID { get; set; }
         public string ClientName { get; set; }
         public string Company { get; set; }
+        public string ImageName { get; set; }
     }
 }

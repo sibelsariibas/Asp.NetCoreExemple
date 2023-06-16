@@ -12,7 +12,7 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) //Bu metot bağlantı adresini tutar
         {
-            optionsBuilder.UseSqlServer("server = SSARIBAS130721\\SSARIBAS; database = Mycv; integrated security= true;");
+            optionsBuilder.UseSqlServer("server = SSARIBAS130721\\SSARIBAS; database = AspDotNetCoreEx; integrated security= true;");
         }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Contact> Contacts { get; set; }
@@ -24,5 +24,6 @@ namespace DataAccessLayer.Concrete
         public DbSet<Skill> Skills { get; set; }
         public DbSet<SocialMedia> SocialMedias { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<EducationInformation> EducationInformations { get; set; }
     }
 }

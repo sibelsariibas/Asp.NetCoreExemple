@@ -1,0 +1,52 @@
+﻿@using EntityLayer.Concreate
+@model List<EducationInformation>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Eğitim</h3>
+</div>
+<div class="table-responsive">
+    <table class="table align-items-center table-flush">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col" class="sort" data-sort="budget">#</th>
+                <th scope="col" class="sort" data-sort="budget">Öğrenim Kurumu</th>
+                <th scope="col" class="sort" data-sort="budget">Branş Bilgisi</th>
+                <th scope="col" class="sort" data-sort="date">Mezuniyer Tarihi</th>
+                <th scope="col">Sil</th>
+                <th scope="col" class="sort" data-sort="completion">Düzenle</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody class="list">
+
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td class="budget">
+                    @item.EducationInformationID
+                </td>
+                <td class="budget">
+                    @item.SchoolName
+                </td>
+                <td class="budget">
+                    @item.Branch
+                </td>
+                <td class="budget">
+                    @item.GraduationDate
+                </td>
+                <td> <a href="/EducationInformation/DeleteEducationInformation/@item.EducationInformationID" class="btn-sm btn-danger">Sil</a></td>
+                <td> <a href="/EducationInformation/UpdateEducationInformation/@item.EducationInformationID" class="btn-sm btn-info">Güncelle</a></td>
+            </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+<br />
+<a href="/EducationInformation/AddEducationInformation" class="btn-sm btn-primary">Eğitim Bilgisi Ekle</a>
