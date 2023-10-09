@@ -16,9 +16,6 @@ namespace My_cv.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            ViewBag.Value1 = "Mesleki Kazanımlar";
-            ViewBag.Value2 = "Mesleki Kazanımlar";
-            ViewBag.Value3 = "Mesleki Kazanımlar";
             var values = serviceManager.TGetList();
             return View(values);
         }
@@ -26,9 +23,6 @@ namespace My_cv.Controllers
         [HttpGet]
         public IActionResult AddService()
         {
-            ViewBag.Value1 = "Mesleki Kazanımlar";
-            ViewBag.Value2 = "Mesleki Kazanımlar";
-            ViewBag.Value3 = "Mesleki Kazanımlar";
             return View();
         }
 
@@ -50,9 +44,6 @@ namespace My_cv.Controllers
         public IActionResult UpdateService(int Id)
         {
             Service service = serviceManager.TGetByID(Id);
-            ViewBag.Value1 = "Mesleki Kazanımlar";
-            ViewBag.Value2 = "Mesleki Kazanımlar";
-            ViewBag.Value3 = "Mesleki Kazanımlar";
             return View(service);
         }
 

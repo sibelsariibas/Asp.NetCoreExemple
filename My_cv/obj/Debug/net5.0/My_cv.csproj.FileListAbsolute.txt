@@ -390,3 +390,4 @@ C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0
 C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0\Razor\Views\Services\UpdateService.cshtml.g.cs
 C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0\Razor\Views\Services\AddService.cshtml.g.cs
 C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0\Razor\Views\Contact\Index.cshtml.g.cs
+C:\Users\sibel.saribas\source\Asp.NetCoreEx\Asp.NetCoreEx\My_cv\obj\Debug\net5.0\Razor\Views\Shared\_NewAdminLayout.cshtml.g.cs

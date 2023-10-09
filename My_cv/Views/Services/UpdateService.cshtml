@@ -2,36 +2,27 @@
 @model Service
 @{
     ViewData["Title"] = "UpdateService";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
 }
 
-<form class="form-group" method="post">
-    <div class="col-xl-8 order-xl-1">
+@using (Html.BeginForm("UpdateService", "Services", FormMethod.Post))
+{
+    <div class="col-10 grid-margin stretch-card">
         <div class="card">
-            <div class="card-header">
-                <div class="row align-items-center">
-                    <div class="col-8">
-                        <h3 class="mb-0">Mesleki Kazanım Kaydı</h3>
-                    </div>
-                    <div class="col-4 text-right">
-                        <button type="submit" class="btn btn-sm btn-primary">Güncelle</button>
-                    </div>
-                </div>
-            </div>
             <div class="card-body">
-                <input name="ServiceID" value="@Model.ServiceID" type="hidden" />
-                <h6 class="heading-small text-muted mb-2">Mesleki Kazanım</h6>
-                <div class="pl-lg-2">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-control-label" for="Title">Açıklama</label>
-                                <input type="text" name="Title" maxlength="200" class="form-control" placeholder="Başlık" value="@Model.Title" required>
-                            </div>
-                        </div>
-                    </div>                 
-                </div>
+                <h4 class="card-title">Mesleki Kazanım</h4>
+                <form class="forms-sample">
+
+                    @Html.HiddenFor(x => x.ServiceID)
+                    <div class="form-group">
+                        <label>Yetenek</label>
+                        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+                        <text style="color:gray">@Html.ValidationMessage("Title")</text>
+                    </div>
+                    <button type="submit" class="btn btn-outline-info">Kaydet</button>
+                    <button class="btn btn-dark">Vazgeç</button>
+                </form>
             </div>
         </div>
     </div>
-</form>
+}

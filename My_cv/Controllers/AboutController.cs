@@ -26,9 +26,6 @@ namespace My_cv.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            ViewBag.Value1 = "Hakkımda";
-            ViewBag.Value2 = "Hakkımda";
-            ViewBag.Value3 = "Bilgiler";
             var values = aboutManager.TGetList().FirstOrDefault();
             return View(values);
         }
@@ -36,9 +33,6 @@ namespace My_cv.Controllers
         [HttpPost]
         public IActionResult Index(About about)
         {
-            ViewBag.Value1 = "Hakkımda";
-            ViewBag.Value2 = "Hakkımda";
-            ViewBag.Value3 = "Bilgiler";
             aboutManager.TUpdate(about);
             return View(about);
         }
@@ -69,5 +63,53 @@ namespace My_cv.Controllers
             }
             return RedirectToAction("Index");
         }
+
+
+        //[HttpPost]
+        //public IActionResult Index(string name)
+        //{
+        //    var newFileName = string.Empty;
+
+        //    if (HttpContext.Request.Form.Files != null)
+        //    {
+        //        var fileName = string.Empty;
+        //        string PathDB = string.Empty;
+
+        //        var files = HttpContext.Request.Form.Files;
+
+        //        foreach (var file in files)
+        //        {
+        //            if (file.Length > 0)
+        //            {
+        //                //Getting FileName
+        //                fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+
+        //                //Assigning Unique Filename (Guid)
+        //                var myUniqueFileName = Convert.ToString(Guid.NewGuid());
+
+        //                //Getting file Extension
+        //                var FileExtension = Path.GetExtension(fileName);
+
+        //                // concating  FileName + FileExtension
+        //                newFileName = myUniqueFileName + FileExtension;
+
+        //                // Combines two strings into a path.
+        //                fileName = Path.Combine(_environment.WebRootPath, "demoImages") + $@"\{newFileName}";
+
+        //                // if you want to store path of folder in database
+        //                PathDB = "demoImages/" + newFileName;
+
+        //                using (FileStream fs = System.IO.File.Create(fileName))
+        //                {
+        //                    file.CopyTo(fs);
+        //                    fs.Flush();
+        //                }
+        //            }
+        //        }
+
+
+        //    }
+    //    //    return View();
+    //    }
     }
 }

@@ -2,7 +2,7 @@
 @model About
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
 }
 <style>
     textarea.form-control {
@@ -19,14 +19,13 @@
                         <h3 class="mb-0">Hakkımda</h3>
                     </div>
                     <div class="col-4 text-right">
-                        <button type="submit" class="btn btn-sm btn-primary">Güncelle</button>
+                        <button type="submit" class="btn btn-outline-info">Güncelle</button>
                     </div>
                 </div>
             </div>
             <input name="AboutID" value="@Model.AboutID" type="hidden" />
             <input name="ImageUrl" value="@Model.ImageUrl" type="hidden" />
             <div class="card-body">
-                <h6 class="heading-small text-muted mb-2">Hakkımda</h6>
                 <div class="pl-lg-2">
                     <div class="row">
                         <div class="col-lg-6">
@@ -82,7 +81,7 @@
     </div>
 
     <div class="card">
-        <form action="UploadFile" method="post" enctype="multipart/form-data">
+        <form action="UploadFile" method="post" enctype="multipart/form-data">    @*enctype ile dosyayı actiona gönderiyoruz , bunu eklemek zorundayız*@
             <div class="card-header">
                 <div class="row align-items-center">
                     <div class="col-8">
@@ -96,7 +95,9 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="form-group">
+                        <div class="form-group"> 
+
+                            @*userımage klasörünü yetkilendir , dışardan herkes herşeyi görmemeli !!*@
                             <img style="width:250px ; height:250px ; border-radius:10px" src="~/Template/images/userımage/@Model.ImageUrl" />
                             <br />
                             <br />

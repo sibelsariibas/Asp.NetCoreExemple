@@ -1,64 +1,39 @@
 ﻿
 @{
     ViewData["Title"] = "AddSExperience";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
 }
 
-<style>
-    textarea.form-control {
-        height: 250px; 
-        width: 750px;
-    }
-</style>
-
-<form class="form-group" method="post">
-    <div class="col-xl-8 order-xl-1">
+@using (Html.BeginForm("AddExperience", "Experience", FormMethod.Post))
+{
+    <div class="col-10 grid-margin stretch-card">
         <div class="card">
-            <div class="card-header">
-                <div class="row align-items-center">
-                    <div class="col-8">
-                        <h3 class="mb-0">Deneyim Ekle</h3>
-                    </div>
-                    <div class="col-4 text-right">
-                        <button type="submit" class="btn btn-sm btn-primary">Kaydet</button>
-                    </div>
-                </div>
-            </div>
-
             <div class="card-body">
-                <h6 class="heading-small text-muted mb-2">Deneyim Detay</h6>
-                <div class="pl-lg-2">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                              
-                                <label class="form-control-label" for="Title">Firma Bilgisi</label>
-                                <div>  @Html.ValidationMessage("Name")</div>
-                                <input type="text" name="Name" maxlength="200" class="form-control" placeholder="Firma" required>
-                            </div>
-                        </div>
+                <h4 class="card-title">Deneyim</h4>
+                <form class="forms-sample">
+                    <div class="form-group">
+                        <label>Başlık</label>
+                        <input type="text" class="form-control" placeholder="Başlık" name="Name">
+                        <text style="color:gray">@Html.ValidationMessage("Name")</text>
                     </div>
-
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-control-label" for="Title">Tarih</label>
-                                <input type="date" name="Date" maxlength="200" class="form-control" placeholder="Tarih" required>
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label>Tarih</label>
+                        <input type="date" class="form-control" placeholder="Tarih" name="Date">
+                        <text style="color:gray">@Html.ValidationMessage("Date")</text>
                     </div>
-
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-control-label" for="Title">Görev Tanımı</label>
-                                <div> @Html.ValidationMessage("Description")</div>
-                                <textarea name="Description" maxlength="700" class="form-control" placeholder="Görev Tanımı" required></textarea>
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label>Görsel URL</label>
+                        <input type"text" class="form-control" placeholder="Görsel URL" name="ImageUrl">
+                        <text style="color:gray">@Html.ValidationMessage("ImageUrl")</text>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label>Görev Tanımı</label>
+                        <textarea class="form-control" name="Description" rows="6"></textarea>
+                        <text style="color:gray">@Html.ValidationMessage("Description")</text>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
+                </form>
             </div>
         </div>
     </div>
-</form>
+}

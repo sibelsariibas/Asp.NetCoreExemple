@@ -2,55 +2,34 @@
 @model Feature
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
 }
-
-
-<form class="form-group" method="post">
-    <div class="col-xl-8 order-xl-1">
+@using (Html.BeginForm("Index", "Feature", FormMethod.Post))
+{
+    <div class="col-10 grid-margin stretch-card">
         <div class="card">
-            <div class="card-header">
-                <div class="row align-items-center">
-                    <div class="col-8">
-                        <h3 class="mb-0">Giriş Bilgileri</h3>
-                    </div>
-                    <div class="col-4 text-right">
-                        <button type="submit" class="btn btn-sm btn-primary">Güncelle</button>
-                    </div>
-                </div>
-            </div>
-
-            <input name="FeatureID" value="@Model.FeatureID" type="hidden" />
             <div class="card-body">
-                <h6 class="heading-small text-muted mb-2">Giriş Bilgileri</h6>
-                <div class="pl-lg-2">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-control-label" for="Header">Başlık</label>
-                                <input type="text" name="Header" maxlength="200" class="form-control" placeholder="Başlık" required value="@Model.Header">
-                            </div>
-                        </div>
+                <h4 class="card-title">Giriş</h4>
+                <form class="forms-sample">
+                    @Html.HiddenFor(x => x.FeatureID)
+                    <div class="form-group">
+                        <label>İsim</label>
+                        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                        <text style="color:gray">@Html.ValidationMessage("Name")</text>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-control-label" for="Name">İsim Soyisim</label>
-                                <input type="text" name="Name" maxlength="200" class="form-control" placeholder="İsim" required value="@Model.Name">
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label>Unvan</label>
+                        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+                        <text style="color:gray">@Html.ValidationMessage("Title")</text>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-control-label" for="Title">Ünvan</label>
-                               <input type="text" name="Title" maxlength="700" class="form-control" placeholder="Ünvan" required value="@Model.Title" >
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label>Başlık</label>
+                        @Html.TextAreaFor(x => x.Header, 6, 3, new { @class = "form-control" })
+                        <text style="color:gray">@Html.ValidationMessage("Header")</text>
                     </div>
-
-                </div>
+                    <button type="submit" class="btn btn-outline-info">Kaydet</button>
+                </form>
             </div>
         </div>
     </div>
-</form>
+}

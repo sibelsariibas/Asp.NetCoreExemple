@@ -1,63 +1,43 @@
 ﻿@using EntityLayer.Concreate
-@model Experience  
+@model Experience
 @{
     ViewData["Title"] = "UpdateExperience";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
 }
 
-<style>
-    textarea.form-control {
-        height: 250px; /* İstediğiniz yükseklik değeri */
-        width:750px;
-    }
-</style>
-<form class="form-group" method="post">
-    <div class="col-xl-8 order-xl-1">
+@using (Html.BeginForm("UpdateExperience", "Experience", FormMethod.Post))
+{
+    <div class="col-10 grid-margin stretch-card">
         <div class="card">
-            <div class="card-header">
-                <div class="row align-items-center">
-                    <div class="col-8">
-                        <h3 class="mb-0">Deneyim Bilgileri</h3>
-                    </div>
-                    <div class="col-4 text-right">
-                        <button type="submit" class="btn btn-sm btn-primary">Güncelle</button>
-                    </div>
-                </div>
-            </div>
-
-            <input name="ExperienceID" value="@Model.ExperienceID" type="hidden" />
             <div class="card-body">
-                <h6 class="heading-small text-muted mb-2">Deneyim Detay</h6>
-                <div class="pl-lg-2">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-control-label" for="Title">Firma Bilgisi</label>
-                                <input type="text" name="Name" maxlength="200" class="form-control" placeholder="Firma" required value="@Model.Name">
-                            </div>
-                        </div>
-                    </div>
+                <h4 class="card-title">Deneyim</h4>
+                <form class="forms-sample">
 
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-control-label" for="Title">Tarih</label>
-                                <input type="date" name="Date" class="form-control" placeholder="Tarih" required value="@Model.Date.ToString()">
-                            </div>
-                        </div>
+                    @Html.HiddenFor(x=>x.ExperienceID)
+                    <div class="form-group">
+                        <label>Başlık</label>
+                        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                        <text style="color:gray">@Html.ValidationMessage("Name")</text>
                     </div>
-
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-control-label" for="Title">Görev Tanımı</label>
-                                <textarea name="Description" maxlength="700" class="form-control" placeholder="Görev Tanımı" required >@Model.Description</textarea>
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label>Tarih</label>
+                        @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+                        <text style="color:gray">@Html.ValidationMessage("Date")</text>
                     </div>
-
-                </div>
+                    <div class="form-group">
+                        <label>Görsel URL</label>
+                        @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+                        <text style="color:gray">@Html.ValidationMessage("ImageUrl")</text>
+                    </div>
+                    <div class="form-group">
+                        <label>Görev Tanımı</label>
+                        @Html.TextAreaFor(x => x.Description, 6, 3, new { @class = "form-control" })
+                        <text style="color:gray">@Html.ValidationMessage("Description")</text>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
+                    <button class="btn btn-dark">Vazgeç</button>
+                </form>
             </div>
         </div>
     </div>
-</form>
+}

@@ -3,52 +3,34 @@
 
 @{
     ViewData["Title"] = "UpdateEducationInformation";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
 }
 
-<form class="form-group" method="post">
-    <div class="col-xl-8 order-xl-1">
+@using (Html.BeginForm("AddEducationInformation", "EducationInformation", FormMethod.Post))
+{
+    <div class="col-10 grid-margin stretch-card">
         <div class="card">
-            <div class="card-header">
-                <div class="row align-items-center">
-                    <div class="col-8">
-                        <h3 class="mb-0">Eğitim Bilgileri</h3>
-                    </div>
-                    <div class="col-4 text-right">
-                        <button type="submit" class="btn btn-sm btn-primary">Kaydet</button>
-                    </div>
-                </div>
-            </div>
             <div class="card-body">
-                <h6 class="heading-small text-muted mb-2">Eğitim Bilgileri</h6>
-                <div class="pl-lg-2">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-control-label" for="Title">Öğrenim Kurumu</label>
-                                <input type="text" name="SchoolName" maxlength="200" class="form-control" placeholder="Öğrenim Kurumu" required">
-                            </div>
-                        </div>
+                <h4 class="card-title">Eğitim</h4>
+                <form class="forms-sample">
+                    <div class="form-group">
+                        <label>Öğrenim Kurumu</label>
+                        <input type="text" class="form-control" placeholder="Öğrenim Kurumu" name="SchoolName">
+                        <text style="color:gray">@Html.ValidationMessage("SchoolName")</text>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-control-label" for="Title">Branş</label>
-                                <input type="text" name="Branch" maxlength="200" class="form-control" placeholder="Branş" required>
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label>Branş</label>
+                        <input type="text" class="form-control" placeholder="Branş" name="Branch">
+                        <text style="color:gray">@Html.ValidationMessage("Branch")</text>
                     </div>
-
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-control-label" for="Title">Meznuiyet Tarihi</label>
-                                <input type="date" name="GraduationDate" class="form-control" placeholder="@DateTime.Now.Date.ToString()" required >
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label>Meznuiyet Tarihi</label>
+                        <input type="date" class="form-control" placeholder="Tarih" name="GraduationDate">
+                        <text style="color:gray">@Html.ValidationMessage("GraduationDate")</text>
                     </div>
-                </div>
+                    <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
+                </form>
             </div>
         </div>
     </div>
-</form>
+}

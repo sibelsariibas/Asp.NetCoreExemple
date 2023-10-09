@@ -16,9 +16,6 @@ namespace My_cv.Controllers
         ExperienceManager experienceManager = new ExperienceManager(new EfExperienceDal());
         public IActionResult Index()
         {
-            ViewBag.Value1 = "Deneyim";
-            ViewBag.Value2 = "Deneyim";
-            ViewBag.Value3 = "Deneyim Listesi";
             var values = experienceManager.TGetList();
             return View(values);
         }
@@ -26,9 +23,6 @@ namespace My_cv.Controllers
         [HttpGet]
         public IActionResult AddExperience()
         {
-            ViewBag.Value1 = "Deneyim";
-            ViewBag.Value2 = "Deneyim";
-            ViewBag.Value3 = "Deneyim Ekle";
             return View();
         }
 
@@ -64,9 +58,6 @@ namespace My_cv.Controllers
         [HttpGet]
         public IActionResult UpdateExperience(int Id)
         {
-            ViewBag.Value1 = "Deneyim";
-            ViewBag.Value2 = "Deneyim";
-            ViewBag.Value3 = "Deneyim Bilgileri";
             Experience experience=  experienceManager.TGetByID(Id);
             return View(experience);
         }
@@ -74,9 +65,6 @@ namespace My_cv.Controllers
         [HttpPost]
         public IActionResult UpdateExperience(Experience experience)
         {
-            ViewBag.Value1 = "Deneyim";
-            ViewBag.Value2 = "Deneyim";
-            ViewBag.Value3 = "Deneyim Bilgileri";
             experienceManager.TUpdate(experience);
             return RedirectToAction("Index");
         }

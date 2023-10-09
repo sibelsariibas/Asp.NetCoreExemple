@@ -14,9 +14,6 @@ namespace My_cv.Controllers
         TestimonialManager testimonialManager = new TestimonialManager(new EfTestimonialDal () );
         public IActionResult Index()
         {
-            ViewBag.Value1 = "Referans";
-            ViewBag.Value2 = "Referans";
-            ViewBag.Value3 = "Referans Listesi";
             var list = testimonialManager.TGetList();
             return View(list);
         }
@@ -24,9 +21,6 @@ namespace My_cv.Controllers
         [HttpGet]
         public IActionResult AddTestimanial()
         {
-            ViewBag.Value1 = "Referans";
-            ViewBag.Value2 = "Referans";
-            ViewBag.Value3 = "Referans Ekle";
             return View();
         }
 
@@ -47,9 +41,6 @@ namespace My_cv.Controllers
         [HttpGet]
         public IActionResult UpdateTestimanial(int id)
         {
-            ViewBag.Value1 = "Referans";
-            ViewBag.Value2 = "Referans";
-            ViewBag.Value3 = "Referans Bilgileri";
             Testimonial testimonial = testimonialManager.TGetByID(id);
             return View(testimonial);
         }

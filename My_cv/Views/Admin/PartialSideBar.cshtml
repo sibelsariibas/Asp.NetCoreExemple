@@ -1,54 +1,134 @@
-﻿<div class="navbar-inner">
-    <div class="collapse navbar-collapse" id="sidenav-collapse-main">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link active" href="/Feature/Index">
-                    <i class="ni ni-planet text-orange"></i>
-                    <span class="nav-link-text">Giriş</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/About/Index">
-                    <i class="ni ni-single-02 text-yellow"></i>
-                    <span class="nav-link-text">Hakkımda</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/Services/Index">
-                    <i class="ni ni-bullet-list-67 text-green"></i>
-                    <span class="nav-link-text">Mesleki Kazanım</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="/Skill/Index">
-                    <i class="ni ni-laptop text-purple"></i>
-                    <span class="nav-link-text">Teknik Bilgi</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/EducationInformation/Index">
-                    <i class="ni ni-books text-red"></i>
-                    <span class="nav-link-text">Eğitim</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/Experience/Index">
-                    <i class="ni ni-badge text-blue"></i>
-                    <span class="nav-link-text">Deneyim</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/Testimanial/Index">
-                    <i class="ni ni-ungroup text-info"></i>
-                    <span class="nav-link-text">Referans</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/Contact/Index">
-                    <i class="ni ni-email-83 text-gray"></i>
-                    <span class="nav-link-text">İletişim</span>
-                </a>
-            </li>
-        </ul>  
+﻿
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+        <a class="sidebar-brand brand-logo" href="../../index.html"><img src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/images/logo.svg" alt="logo" /></a>
+        <a class="sidebar-brand brand-logo-mini" href="../../index.html"><img src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/images/logo-mini.svg" alt="logo" /></a>
     </div>
-</div>
+    <ul class="nav">
+        <li class="nav-item profile">
+            <div class="profile-desc">
+                <div class="profile-pic">
+                    <div class="count-indicator">
+                        <img class="img-xs rounded-circle " src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/images/faces/face15.jpg" alt="">
+                        <span class="count bg-success"></span>
+                    </div>
+                    <div class="profile-name">
+                        <h5 class="mb-0 font-weight-normal">Henry Klein</h5>
+                        <span>Gold Member</span>
+                    </div>
+                </div>
+                <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
+                <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
+                    <a href="#" class="dropdown-item preview-item">
+                        <div class="preview-thumbnail">
+                            <div class="preview-icon bg-dark rounded-circle">
+                                <i class="mdi mdi-settings text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="preview-item-content">
+                            <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item preview-item">
+                        <div class="preview-thumbnail">
+                            <div class="preview-icon bg-dark rounded-circle">
+                                <i class="mdi mdi-onepassword  text-info"></i>
+                            </div>
+                        </div>
+                        <div class="preview-item-content">
+                            <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item preview-item">
+                        <div class="preview-thumbnail">
+                            <div class="preview-icon bg-dark rounded-circle">
+                                <i class="mdi mdi-calendar-today text-success"></i>
+                            </div>
+                        </div>
+                        <div class="preview-item-content">
+                            <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </li>
+
+        <li class="nav-item nav-category">
+            <span class="nav-link">Özgeçmiş</span>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="">
+                <span class="menu-icon">
+                    <i class="mdi mdi-speedometer"></i>
+                </span>
+                <span class="menu-title">Dashboard</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="~/Feature/Index">
+                <span class="menu-icon">
+                    <i class="mdi mdi-playlist-play"></i>
+                </span>
+                <span class="menu-title">Giriş</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="/About/Index">
+                <span class="menu-icon">
+                    <i class="mdi mdi-table-large"></i>
+                </span>
+                <span class="menu-title">Hakkımda</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="/Services/Index">
+                <span class="menu-icon">
+                    <i class="mdi mdi-chart-bar"></i>
+                </span>
+                <span class="menu-title">Mesleki Kazanım</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="/Skill/Index">
+                <span class="menu-icon">
+                    <i class="mdi mdi-contacts"></i>
+                </span>
+                <span class="menu-title">Teknik Bilgi</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="/EducationInformation/Index">
+                <span class="menu-icon">
+                    <i class="mdi mdi-file-document-box"></i>
+                </span>
+                <span class="menu-title">Eğitim</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="/Experience/Index">
+                <span class="menu-icon">
+                    <i class="mdi mdi-file-document-box"></i>
+                </span>
+                <span class="menu-title">Deneyim</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="/Testimanial/Index">
+                <span class="menu-icon">
+                    <i class="mdi mdi-file-document-box"></i>
+                </span>
+                <span class="menu-title">Referans</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="/Contact/Index">
+                <span class="menu-icon">
+                    <i class="mdi mdi-file-document-box"></i>
+                </span>
+                <span class="menu-title">İletişim</span>
+            </a>
+        </li>
+    </ul>
+</nav>

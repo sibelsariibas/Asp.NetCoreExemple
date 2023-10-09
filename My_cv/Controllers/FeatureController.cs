@@ -16,9 +16,6 @@ namespace My_cv.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            ViewBag.Value1 = "Giriş";
-            ViewBag.Value2 = "Giriş";
-            ViewBag.Value3 = "Bilgiler";
             var values = featureManager.TGetList().FirstOrDefault();
             return View(values);
         }
@@ -34,9 +31,6 @@ namespace My_cv.Controllers
         [HttpGet]
         public IActionResult AddSkill()
         {
-            ViewBag.Value1 = "Giriş";
-            ViewBag.Value2 = "Giriş";
-            ViewBag.Value3 = "Bilgiler";
             return View();
         }
 
@@ -58,9 +52,6 @@ namespace My_cv.Controllers
         public IActionResult UpdateSkill(int Id)
         {
             Feature feature = featureManager.TGetByID(Id);
-            ViewBag.Value1 = "Giriş";
-            ViewBag.Value2 = "Giriş";
-            ViewBag.Value3 = "Bilgiler";
             return View(feature);
         }
 

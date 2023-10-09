@@ -2,55 +2,38 @@
 @model EducationInformation
 
 @{
-    ViewData["Title"] = "UpdateEducationInformation";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "AddEducationInformation";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
 }
 
-<form class="form-group" method="post">
-    <div class="col-xl-8 order-xl-1">
+@using (Html.BeginForm("UpdateEducationInformation", "EducationInformation", FormMethod.Post))
+{
+    <div class="col-10 grid-margin stretch-card">
         <div class="card">
-            <div class="card-header">
-                <div class="row align-items-center">
-                    <div class="col-8">
-                        <h3 class="mb-0">Eğitim Bilgileri</h3>
-                    </div>
-                    <div class="col-4 text-right">
-                        <button type="submit" class="btn btn-sm btn-primary">Güncelle</button>
-                    </div>
-                </div>
-            </div>
-
-            <input name="EducationInformationID" value="@Model.EducationInformationID" type="hidden" />
             <div class="card-body">
-                <h6 class="heading-small text-muted mb-2">Eğitim Bilgileri</h6>
-                <div class="pl-lg-2">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-control-label" for="Title">Öğrenim Kurumu</label>
-                                <input type="text" name="SchoolName" maxlength="200" class="form-control" placeholder="Öğrenim Kurumu" required value="@Model.SchoolName">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-control-label" for="Title">Branş</label>
-                                <input type="text" name="Branch" maxlength="200" class="form-control" placeholder="Branş" required value="@Model.Branch">
-                            </div>
-                        </div>
-                    </div>
+                <h4 class="card-title">Eğitim</h4>
+                <form class="forms-sample">
 
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-control-label" for="Title">Meznuiyet Tarihi</label>
-                                <input type="date" name="GraduationDate" class="form-control" placeholder="Tarih" required value="@Model.GraduationDate.Date.ToString()">
-                            </div>
-                        </div>
+                    @Html.HiddenFor(x => x.EducationInformationID)
+                    <div class="form-group">
+                        <label>Öğrenim Kurumu</label>
+                        @Html.TextBoxFor(x => x.SchoolName, new { @class = "form-control" })
+                        <text style="color:gray">@Html.ValidationMessage("SchoolName")</text>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label>Branş</label>
+                        @Html.TextBoxFor(x => x.Branch, new { @class = "form-control" })
+                        <text style="color:gray">@Html.ValidationMessage("Branch")</text>
+                    </div>
+                    <div class="form-group">
+                        <label>Meznuiyet Tarihi</label>
+                        @Html.TextBoxFor(x => x.GraduationDate, new { @class = "form-control" })
+                        <text style="color:gray">@Html.ValidationMessage("GraduationDate")</text>
+                    </div>
+                    <button type="submit" class="btn btn-outline-info">Kaydet</button>
+                    <button class="btn btn-dark">Vazgeç</button>
+                </form>
             </div>
         </div>
     </div>
-</form>
+}
